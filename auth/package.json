@@ -1,0 +1,25 @@
+{
+  "name": "bookit",
+  "version": "1.0.0",
+  "description": "A ticket booking portal",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node-dev src/index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arshad404/Bookit.git"
+  },
+  "author": "Arshad",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arshad404/Bookit/issues"
+  },
+  "homepage": "https://github.com/arshad404/Bookit#readme",
+  "dependencies": {
+    "@types/express": "^4.17.13",
+    "express": "^4.17.1",
+    "ts-node-dev": "^1.1.8",
+    "typescript": "^4.3.5"
+  }
+}
