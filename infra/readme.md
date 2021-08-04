@@ -8,8 +8,8 @@
 
 Steps to run the pods
 
-1.         minikube start
-2.         kubectl get pods
+1.            minikube start
+2.            kubectl get pods
 
 Follow these steps to get ImagePullBackOff:
 
@@ -42,3 +42,9 @@ Follow these steps to get ImagePullBackOff:
 3. echo "$(minikube ip) ticketing.dev" | sudo tee -a /etc/hosts
 
 4. gcloud container clusters get-credentials ticketing.dev --zone=us-central1-f
+
+5. kubectl delete all --all --all-namespaces
+
+6. login to google cloud sdk default = `gcloud auth application-default login`
+
+7.
