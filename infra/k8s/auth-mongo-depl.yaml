@@ -33,19 +33,19 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: auth-mongo-depl
-spec:
-  replicas: 1
+spec: #how this service is going to behave
+  replicas: 1 #one single pod
   selector:
     matchLabels:
       app: auth-mongo
-  template:
+  template: #with the help of template and spec, our services will be selected
     metadata:
-      labels:
+      labels: #help in selector(Service)
         app: auth-mongo
     spec:
-      containers:
+      containers: #describe the array of containers
         - name: auth-mongo
-          image: mongo
+          image: mongo #image name of the containers
 ---
 apiVersion: v1
 kind: Service
