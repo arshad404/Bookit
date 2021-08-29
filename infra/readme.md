@@ -8,8 +8,8 @@
 
 Steps to run the pods
 
-1.            minikube start
-2.            kubectl get pods
+1.             minikube start
+2.             kubectl get pods
 
 Follow these steps to get ImagePullBackOff:
 
@@ -47,4 +47,6 @@ Follow these steps to get ImagePullBackOff:
 
 6. login to google cloud sdk default = `gcloud auth application-default login`
 
-7.
+7. kubectl create secret generic jwt-secret --from-literal=JWT_KEY=asdf
+
+8. kubectl get secrets
