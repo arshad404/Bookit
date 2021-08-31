@@ -6,7 +6,7 @@
   "main": "index.js",
   "scripts": {
     "start": "ts-node-dev src/index.ts",
-    "test": "mocha -r ts-node/register test/*.test.ts --timeout 10000" 
+    "test": "mocha -r ts-node/register test/*.test.ts --timeout 10000"
   },
   "jset": {
     "preset": "ts-jest",
@@ -26,6 +26,7 @@
   },
   "homepage": "https://github.com/arshad404/Bookit#readme",
   "dependencies": {
+    "@bookit/common": "^1.0.2",
     "@types/cookie-session": "^2.0.43",
     "@types/express": "^4.17.13",
     "@types/jsonwebtoken": "^8.5.4",
